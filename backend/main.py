@@ -1,12 +1,12 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from .database import Base, engine
+from backend.database import Base, engine
 
-from .routes.auth_routes import router as auth_router
-from .routes.water_routes import router as water_router
-from .routes.aerator_routes import router as aerator_router
-from .routes.ai_routes import router as ai_router
+from backend.routes.auth_routes import router as auth_router
+from backend.routes.water_routes import router as water_router
+from backend.routes.aerator_routes import router as aerator_router
+from backend.routes.ai_routes import router as ai_router
 
 
 # =========================
